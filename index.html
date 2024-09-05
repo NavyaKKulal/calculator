@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>simple calculator</title>
+        <link rel="stylesheet" href="style.css">
+        
+        
+    </head>
+    <body onload="reset()">
+        <h1>simple calculator</h1>
+        <table>
+            <tr>
+                <td colspan="5"><input type="text" id="res" name="res" value=" "/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="insertOperand('7')"/></td>
+                <td><input type="button" value="8" onclick="insertOperand('8')"/></td>
+                <td><input type="button" value="9" onclick="insertOperand('9')"/></td>
+                <td><input type="button" value="+" onclick="insertOperator('+')"/></td>
+                <td><input type="button" value="-" onclick="insertOperator('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="insertOperand('4')"/></td>
+                <td><input type="button" value="5" onclick="insertOperand('5')"/></td>
+                <td><input type="button" value="*" onclick="insertOperator('*')"/></td>
+                <td><input type="button" value="/" onclick="insertOperator('/')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="insertOperand('1')"/></td>
+                <td><input type="button" value="2" onclick="insertOperand('2')"/></td>
+                <td><input type="button" value="3" onclick="insertOperand('3')"/></td>
+                <td><input type="button" value="0" onclick="insertOperand('0')"/></td>
+                <td><input type="button" value="=" onclick="calculate('=')"/></td>
+            </tr>
+            <tr>
+                <td colspan="5"><input type="button" size="100%" value="CLEAR" onclick="reset()"/></td>
+            </tr>
+        </table>
+        <script src ="script.js"></script>
+
+    </body>
+</html>
